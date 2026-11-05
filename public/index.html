@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusEats Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CampusEats Catalogue</h1>
+
+    <section>
+        <h2>Food Items</h2>
+        <div id="items-container"></div>
+    </section>
+
+    <section>
+        <h2>Add New Item</h2>
+
+        <form id="item-form">
+            <input type="text" id="name" placeholder="Food Name" required>
+
+            <input type="number" id="price" placeholder="Price" min="0" required>
+
+            <label>
+                <input type="checkbox" id="available" checked>
+                Available
+            </label>
+
+            <button type="submit">Add Item</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
